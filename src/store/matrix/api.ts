@@ -4,7 +4,7 @@ import { logger } from '@/lib/logger';
 
 // Function to save the analysis in Firestore
 export async function saveMatrixAnalysisToDb(
-  matrixId: string,
+  //matrixId: string,
   responses: Record<string, string>,
   name: string,
   userId: string
