@@ -10,7 +10,8 @@ export const useMatrixStore = create<MatrixState>((set, get) => ({
   loading: false,
   error: null,
 
-  saveAnalysis: async (matrixId: string, responses: Record<string, string>, name: string) => {
+  saveAnalysis: async (responses: Record<string, string>, name: string) => {
+  //saveAnalysis: async (matrixId: string, responses: Record<string, string>, name: string) => {
     try {
       set({ loading: true, error: null });
 
