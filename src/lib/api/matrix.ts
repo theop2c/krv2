@@ -3,7 +3,7 @@ import { logger } from '../logger';
 const MATRIX_API_URL = 'https://savematrixanalysis-cak4tc36na-uc.a.run.app';
 
 export async function saveMatrixAnalysis(
-  matrixId: string,
+  //matrixId: string,
   fileId: string,
   responses: Record<string, string>,
   name: string,
@@ -19,7 +19,7 @@ export async function saveMatrixAnalysis(
         'x-user-id': userId,
       },
       body: JSON.stringify({
-        matrixId,
+        //matrixId,
         userId,
         fileId,
         responses,
