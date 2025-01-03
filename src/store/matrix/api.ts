@@ -29,8 +29,8 @@ export async function saveMatrixAnalysisToDb(
     logger.info('Firestore request:', JSON.stringify(analysisData, null, 2));
     logger.info('Firestore request:', analysisData);
 
-    const docRef = await addDoc(collection(db, 'matrix_analyses'), analysisData);
-    logger.info('Analysis saved successfully', { docId: docRef.id });
+    //const docRef = await addDoc(collection(db, 'matrix_analyses'), analysisData);
+    //logger.info('Analysis saved successfully', { docId: docRef.id });
 
     return docRef.id;
   } catch (error) {
