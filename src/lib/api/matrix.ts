@@ -20,6 +20,7 @@ export async function saveMatrixAnalysis(
       },
       body: JSON.stringify({
         matrixId,
+        userId,
         fileId,
         responses,
         name,
